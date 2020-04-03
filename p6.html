@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Práctica 6. Bordes</title>
+  <style>
+    body{
+      font-family: sans-serif;
+    }
+
+    p:nth-of-type(odd){
+      background-color: purple;
+      color: white;
+      padding: 10px;
+      text-decoration: underline;
+      font-weight: bolder;
+    }
+    p:nth-of-type(2){
+      border: 1px solid black;
+    }
+    p:nth-of-type(4){
+      border: 1px solid black;
+      padding: 10px;
+    }
+    p:nth-of-type(6){
+      border-left: 5px solid gray;
+      border-right: 5px solid gray;
+    }
+    p:nth-of-type(8){
+      border-top: 5px dashed gray;
+      border-bottom: 5px dotted gray;
+    }
+    p:nth-of-type(10){
+      margin-left: 60px;
+      margin-right: 60px;
+      padding: 10px;
+      border: 3px dotted purple;
+    }
+  </style>
+</head>
+<body>
+  <h1>Práctica 6. Bordes</h1>
+  <p><strong>1. Borde: 1px solid black</strong></p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus eius impedit totam quam aliquam, quia perspiciatis iste sit facere, vitae molestias id saepe, enim harum vero inventore delectus temporibus aperiam.</p>
+  <p><strong>2. Borde: 1px solid black con relleno de 10px</strong></p>
+  <p>Aspernatur dolore, quos perspiciatis. Aut, rerum quisquam, reiciendis voluptate error recusandae modi magni eius et accusamus expedita, sequi blanditiis illo impedit facilis explicabo eveniet ea nam ut cupiditate. Reprehenderit, fuga.</p>
+  <p><strong>3. Borde izquierda y derecha de 5px color gris</strong></p>
+  <p>Ab velit tempore tempora nihil, repudiandae totam! Itaque animi minus natus facilis placeat, dignissimos adipisci consequatur temporibus, enim eveniet totam voluptate consequuntur atque deserunt sed impedit in quis possimus voluptas.</p>
+  <p><strong>4. Borde superior (5px dashed) e inferior (5px dotted)</strong></p>
+  <p>Ad reiciendis perferendis sed facilis laborum, laboriosam minus cumque sit omnis sunt, quae ullam minima ut impedit, odio exercitationem nostrum. Omnis dolor quae nobis cumque veniam dolorum commodi optio tenetur.</p>
+  <p><strong>5. Margen lateral 60px, relleno 10px, borde 3px dotted purple</strong></p>
+  <p>Amet enim blanditiis accusamus nulla reiciendis, similique cum dolore quibusdam corrupti, maiores sequi aut, laborum atque deleniti inventore consequatur cumque explicabo, iure odit possimus est voluptatem cupiditate! Modi, officia velit?</p>
+</body>
+</html>
