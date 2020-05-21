@@ -1,93 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <link rel="stylesheet" href="main.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Práctica 12a. Sistema de rejilla (Grid system)</title>
   <style>
-    body{
+    body {
       font-family: sans-serif;
     }
 
-    p>strong{
+    p>strong {
       font-size: 1.2em;
     }
 
-    p>strong>em{
+    p>strong>em {
       font-family: monospace;
       font-size: 0.8em;
     }
 
-    .g-common{
+    .g-common {
       border: 1px solid black;
       height: 200px;
       display: grid;
     }
 
-    .g-uno{
-      grid-template-columns: repeat(6,1fr);
+    .g-uno {
+      grid-template-columns: repeat(6, 1fr);
     }
 
-    .i-red{
+    .i-red {
       background: red;
       grid-column: 2/3;
     }
 
-    .i-yellow{
+    .i-yellow {
       background: yellow;
       grid-column: 3/5;
     }
 
-    .i-yellow:hover{
+    .i-yellow:hover {
       transform: scaleY(0);
       transform-origin: top;
       transition: transform ease-in-out 1000ms;
     }
 
-    .i-purple{
+    .i-purple {
       background: purple;
       grid-column: 6/7;
     }
 
-    .g-dos{
+    .g-dos {
       grid-template-rows: 1fr 4fr 1fr 4fr 1fr;
     }
 
-    .i-green{
+    .i-green {
       background: green;
       grid-row: 2/3;
     }
 
-    .i-blue{
+    .i-blue {
       background: blue;
       grid-row: 4/5;
     }
 
-    .i-black{
+    .i-black {
       background: black;
       grid-row: 5/6;
     }
-
   </style>
 </head>
+
 <body>
-  <h1>Practica 12. Grid System</h1>
-  <p><strong>1. 6 columnas iguales:
-   <em>"patron: repeat(6,1fr), roja:2, amarilla: 3 - 5, purple: 6"</em></strong></p>
+  <div class="grid-layout">
+    <header>
+      <h1>Practicas HTML/CSS 2020</h1>
+      <p class="header__left-side"><strong>Nombre y apellidos</strong></p>
+      <p class="header__right-side"><strong>Grupo</strong></p>
+    </header>
+    <nav>
+      <a href="p1.html">Practica 1</a>
+      <a href="p2.html">Practica 2</a>
+      <a href="p3.html">Practica 3</a>
+      <a href="p4.html">Practica 4</a>
+      <a href="p5.html">Practica 3</a>
+      <a href="p6.html">Practica 6</a>
+      <a href="p7.html">Practica 7</a>
+      <a href="p8.html">Practica 8</a>
+      <a href="p9.html">Practica 9</a>
+      <a href="p10.html">Practica 10</a>
+      <a href="p11.html">Practica 11</a>
+      <a href="p12a.html">Practica 12a</a>
+      <a href="p12b.html">Practica 12b</a>
+      <a href="p12c.html">Practica 12c</a>
+      <a href="p13.html">Practica 13</a>
+      <a href="p14.html">Practica 14</a>
+    </nav>
 
-  <div class="g-common g-uno">
-    <div class="i-red"></div>
-    <div class="i-yellow"></div>
-    <div class="i-purple"></div>
+    <div class="main">
+      <h1>Practica 12. Grid System</h1>
+      <p><strong>1. 6 columnas iguales:
+          <em>"patron: repeat(6,1fr), roja:2, amarilla: 3 - 5, purple: 6"</em></strong></p>
+
+      <div class="g-common g-uno">
+        <div class="i-red"></div>
+        <div class="i-yellow"></div>
+        <div class="i-purple"></div>
+      </div>
+
+      <p><strong>2. 5 filas :
+          <em>"patron: 1fr 4fr 1fr 4fr 1fr, verde:2, azul: 4, negra: 5"</em></strong></p>
+      <div class="g-common g-dos">
+        <div class="i-green"></div>
+        <div class="i-blue"></div>
+        <div class="i-black"></div>
+      </div>
+    </div>
+
   </div>
 
-  <p><strong>2. 5 filas :
-   <em>"patron: 1fr 4fr 1fr 4fr 1fr, verde:2, azul: 4, negra: 5"</em></strong></p>
-  <div class="g-common g-dos">
-    <div class="i-green"></div>
-    <div class="i-blue"></div>
-    <div class="i-black"></div>
-  </div>
+
+
+
 </body>
+
 </html>

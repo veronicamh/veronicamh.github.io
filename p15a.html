@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mr+Dafoe">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta+Malar:300,700">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Práctica 15a. Trabajo final (menú principal) - Primera parte</title>
+  <style>
+    body{
+      margin: 0;
+    }
+    .grid-layout{
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      grid-template-rows: 2fr repeat(14, 1fr);
+    }
+    .grid-layout header{
+      grid-column: 1 / 3;
+      background-color: #00909e;
+      color: white;
+      grid-row: 1/2;
+    }
+    .grid-layout header h1 {
+      grid-column: 1/3;
+      text-align: center;
+    }
+    .grid-layout header p.header__left-side{
+      grid-column: 1/2;
+      text-align: left;
+    }
+    .grid-layout header p.header__right-side{
+      grid-column: 2/3;
+      text-align: right;
+    }
+    .grid-layout nav{
+      background-color: #f9b384;
+      grid-column: 1/2;
+      grid-row: 2/15;
+    }
+    .grid-layout div.main{
+      background-color: #abf0e9;
+      grid-column: 2/3;
+      grid-row: 2/15;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-layout">
+    <header>
+      <h1>Practicas HTML/CSS 2020</h1>
+      <p class="header__left-side"><strong>Nombre y apellidos</strong></p>
+      <p class="header__right-side"><strong>Grupo</strong></p>
+    </header>
+    <nav>
+      <a href="p1.html">Practica 1</a>
+      <a href="p2.html">Practica 2</a>
+      <a href="p3.html">Practica 3</a>
+      <a href="p4.html">Practica 4</a>
+      <a href="p5.html">Practica 3</a>
+      <a href="p6.html">Practica 6</a>
+      <a href="p7.html">Practica 7</a>
+      <a href="p8.html">Practica 8</a>
+      <a href="p9.html">Practica 9</a>
+      <a href="p10.html">Practica 10</a>
+      <a href="p11.html">Practica 11</a>
+      <a href="p12a.html">Practica 12a</a>
+      <a href="p12b.html">Practica 12b</a>
+      <a href="p12c.html">Practica 12c</a>
+      <a href="p13.html">Practica 13</a>
+      <a href="p14.html">Practica 14</a>
+    </nav>
+
+    <div class="main">
+      <p>Contenido ....</p>
+    </div>
+
+  </div>
+</body>
+</html>
