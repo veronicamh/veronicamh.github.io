@@ -4,34 +4,41 @@
 body{
   margin: 0;
 }
+
 .grid-layout{
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 2fr repeat(16, 1fr);
 }
+
 .grid-layout header{
   grid-column: 1 / 3;
   background-color: #00909e;
   color: white;
   grid-row: 1/2;
 }
+
 .grid-layout header h1 {
   grid-column: 1/3;
   text-align: center;
 }
+
 .grid-layout header p.header__left-side{
   grid-column: 1/2;
   text-align: left;
 }
+
 .grid-layout header p.header__right-side{
   grid-column: 2/3;
   text-align: right;
 }
+
 .grid-layout nav{
   background-color: #f9b384;
   grid-column: 1/2;
   grid-row: 2/15;
 }
+
 .grid-layout nav a{
   display: block;
   grid-row: 1fr;
@@ -41,9 +48,30 @@ body{
   text-align: center;
   border-bottom:  .1em solid;
   color: #222831;
+  position: relative;
 }
+
+.grid-layout nav a:before{
+  content: "";
+  height: 5px;
+  width: 100%;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform ease-in-out 500ms;
+}
+
 .grid-layout nav a:hover{
   background-color: #ff926b;
+}
+
+.grid-layout nav a:hover:before {
+  transform: scaleX(1);
 }
 .grid-layout div.main{
   background-color: #abf0e9;
